@@ -14,11 +14,17 @@ class App extends Component {
               <a href="#">Services</a>
               <a href="#">Clients</a>
               <a href="#">Contact</a>
-
             </div>
           </div>
         </nav>
-        <header className="App-header">
+        <header>
+          <div className="container">
+            <h1>Your teams personal <br/>digital devlopment <br/>partner</h1>
+            <div className="btn-group">
+              <button className="btn alt">Contact</button>
+              <button className="btn">Our Work</button>
+            </div>
+          </div>
         </header>
       </div>
     );

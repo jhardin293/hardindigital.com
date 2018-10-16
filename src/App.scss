@@ -7,12 +7,18 @@
 html, body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Circular Std Black';
   font-weight: normal;
   color: #4B4B4B;
+}
+
+h1 {
+  margin: 0px;
+  font-size: 50px;
 }
 
 a {
@@ -36,6 +42,32 @@ ul {
 
 .res-img {
   width: 100%;
+}
+
+.btn {
+  border: none;
+  background-color: white;
+  padding: 8px 36px 8px 36px;
+  border-radius: 4px;
+  color: #7795f8;
+  text-transform: uppercase;
+  font-family: 'Circular Std Black';
+  font-weight: normal;
+  text-align: center;
+  font-size: 15px;
+  line-height: 27px;
+  vertical-align: baseline;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  text-shadow: 0 1px 3px rgba(36,180,126,.4);
+  &.alt {
+    background-color: #3ECF8E;
+    color: white;
+  }
+  &:hover {
+    transform: translateY(-1px);
+    transition: all .3s ease;
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -64,7 +96,6 @@ ul {
 nav {
   height: 54px;
   width: 100%;
-  // background-color: yellow;
   .wrapper {
     display: flex;
     align-items: center;
@@ -79,6 +110,31 @@ nav {
       &:last-child {
         margin:0px;
       }
+    }
+  }
+}
+
+header {
+  height: 395px;
+  width: 100%;
+  background-image: linear-gradient(0deg, #ffffff 4%, #cae3f480 99%);
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: white;
+    height: 222px;
+    width: 103%;
+    transform: rotate(-9deg);
+    top: 346px;
+  }
+  h1 {
+    padding-top: 25px;
+    margin-bottom: 50px;
+  }
+  .btn-group {
+    .btn:first-child {
+      margin-right: 30px;
     }
   }
 }
