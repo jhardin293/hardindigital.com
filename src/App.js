@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './images/logo.svg';
+import './App.scss';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <nav>
+          <div className="wrapper container">
+            <img src={logo}  alt="logo" width="164" height="22" />
+            <div className="menu">
+              <a href="#">Our Work</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+
+            </div>
+          </div>
+        </nav>
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>Hello world</p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
       </div>
     );
