@@ -1,4 +1,4 @@
-## Hardin Digtal company website
+## Hardin Digital company website
 
 View [here](https://github.com/facebook/create-react-app/issues).
 
