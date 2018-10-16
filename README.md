@@ -1,6 +1,6 @@
 ## Hardin Digital company website
 
-View [here](https://github.com/facebook/create-react-app/issues).
+View [here](http://hardindigital.com/).
 
 Made with React and hosted on Firebase
 
